@@ -3,14 +3,14 @@ using namespace std;
 
 int main()
 {
-    int A,B;
-    cin>>A>>B;
-    while(__gcd(A,B)!=1)
+    int n,m;
+    cin>>n>>m;
+    while(__gcd(n,m)!=1)
     {
-        int d=__gcd(A,B);
-        A=A/d;
+        int d=__gcd(n,m);
+        n=n/d;
     }
-   cout<<A;
+   cout<<n;
   
 
 return 0;
